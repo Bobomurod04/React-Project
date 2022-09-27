@@ -1,0 +1,74 @@
+.pricing {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.pricing .container {
+  max-width: 1300px;
+  padding: 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pricing .top-content {
+  display: grid;
+  padding-bottom: 3rem;
+  grid-template-columns: 3fr 1fr;
+  border-bottom: 1px solid var(--lightgrey);
+}
+.pricing .top-content h2 {
+  font-size: 2.5rem;
+  padding: 0.5rem;  
+}
+.pricing .top-content p {
+  color: var(--grey);
+  font-size: 1.25rem;
+}
+.pricing .btn-div {
+  margin: 2.5rem 2rem 0 0;
+}
+.pricing .bottom-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 3rem auto;
+}
+
+.pricing .card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem;
+}
+
+.pricing .card div {
+  display: flex;
+  border-bottom: 1px solid var(--lightgrey);
+  padding: 1rem 0;
+}
+
+.pricing .card .no-border {
+  border: none;
+}
+.pricing .card span {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.pricing .card h3 {
+  font-size: 2rem;
+  margin: 0.75rem;
+}
+
+@media screen and (max-width: 1024px){
+  .pricing .top-content {
+    grid-template-columns: 1fr;
+  }
+  .pricing .top-content h2 {
+    font-size: 2rem;
+  }
+  .pricing .container .bottom-content {
+    display: none;
+  }
+
+}
